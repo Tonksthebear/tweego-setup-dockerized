@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker run -it -v $(pwd):/data --rm chekote/gulp "echo pid1 > /dev/null && gulp $@"
