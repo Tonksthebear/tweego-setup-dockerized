@@ -14,8 +14,10 @@
     "lint-js": "gulp lint",
     "lint-css": "gulp validate",
     "build": "gulp build && tweego -f $npm_package_config_format -m src/modules/ --head=src/head-content.html -o dist/index.html project && opn dist/index.html",
+    "buildwatch": "gulp build && tweego -f $npm_package_config_format -m src/modules/ --head=src/head-content.html -o dist/index.html project --watch",
     "testmode": "gulp build && tweego -f $npm_package_config_format -t -m src/modules/ --head=src/head-content.html -o dist/index.html project && opn dist/index.html",
     "tweegobuild": "tweego -f $npm_package_config_format -m src/modules/ --head=src/modules/head-content.html -o dist/index.html project",
+    "tweegowatch": "tweego -f $npm_package_config_format -m src/modules/ --head=src/head-content.html -o dist/index.html project src/styles src/scripts --watch",
     "build-win": "gulp build && tweego -f %npm_package_config_format% -m src/modules/ --head=src/head-content.html -o dist/index.html project && opn dist/index.html",
     "testmode-win": "gulp build && tweego -f %npm_package_config_format% -t -m src/modules/ --head=src/head-content.html -o dist/index.html project && opn dist/index.html",
     "tweegobuild-win": "tweego -f %npm_package_config_format% -m src/modules/ --head=src/head-content.html -o dist/index.html project"

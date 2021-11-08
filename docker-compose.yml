@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  twee:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: twee:1.0.0
+    stdin_open: true
+    tty: true
+    command: 
+      - bash
+    volumes: 
+      - .:/app
+    user: "${UID}:${GID}"
