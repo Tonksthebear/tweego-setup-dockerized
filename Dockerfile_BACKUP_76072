@@ -1,0 +1,9 @@
+FROM chekote/gulp
+ENV PATH=$PATH:./bin
+<<<<<<< HEAD
+ENV command tweego
+=======
+>>>>>>> 41a3cc9f1cc3aacb3a5dc3374fbeb86c8cf0d5c9
+
+RUN mkdir -p /app
+WORKDIR /app
